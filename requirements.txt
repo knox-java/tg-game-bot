@@ -7,3 +7,4 @@ requests==2.34.2
 telebot==0.0.5
 urllib3==2.7.0
 pytz
+python-telegram-bot
