@@ -35,14 +35,15 @@ telebot.apihelper.READ_TIMEOUT = 30
 
 
 db = pymysql.connect(
-    host=os.getenv("localhost"),
-    user=os.getenv("root"),
-    password=os.getenv("lalbabujha12"),
-    database=os.getenv("tg_game"),
-    port=int(os.getenv("MYSQL_PORT", 3306)),
+    host=os.getenv("MYSQLHOST"),
+    user=os.getenv("MYSQLUSER"),
+    password=os.getenv("MYSQLPASSWORD"),
+    database=os.getenv("MYSQLDATABASE"),
+    port=int(os.getenv("MYSQLPORT", 3306)),
     autocommit=True,
     cursorclass=pymysql.cursors.DictCursor
 )
+
 
 cursor = db.cursor()
 
