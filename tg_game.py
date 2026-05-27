@@ -10,7 +10,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import html
 import pymysql
 
-'''
+
 TOKEN = os.environ.get("TOKEN")
 
 ADMIN_IDS = [
@@ -18,10 +18,7 @@ ADMIN_IDS = [
     for x in os.getenv("ADMIN_IDS", "").split(",")
     if x
 ]
-'''
 
-TOKEN = "YOUR_BOT_TOKEN"
-ADMIN_IDS = "8754002635"
 
 DATA_FILE = "Game_tg.json"
 
