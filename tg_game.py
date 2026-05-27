@@ -34,14 +34,23 @@ telebot.apihelper.READ_TIMEOUT = 30
 
 
 
+from urllib.parse import urlparse
+
+mysql_url = os.getenv("MYSQL_URL")
+
+url = urlparse(mysql_url)
+
 db = pymysql.connect(
-    host=os.getenv("MYSQLHOST"),
-    user=os.getenv("MYSQLUSER"),
-    password=os.getenv("MYSQLPASSWORD"),
-    database=os.getenv("MYSQLDATABASE"),
-    port=int(os.getenv("MYSQLPORT", 3306)),
+
+    host=url.hostname,
+    user=url.username,
+    password=url.password,
+    database=url.path[1:],
+    port=url.port,
+
     autocommit=True,
     cursorclass=pymysql.cursors.DictCursor
+
 )
 
 
