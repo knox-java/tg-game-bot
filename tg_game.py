@@ -2546,7 +2546,7 @@ def mines_callback(call):
         # ⏳ timeout
         if time.time() - game["time"] > 120:
 
-            users[chat_id][owner_uid]["money"] += game["bet"]
+            users[chat_id][owner_uid]["money"] += reward
 
             del mines_games[key]
 
@@ -2568,7 +2568,7 @@ def mines_callback(call):
 
         reward = int(game["reward"])
 
-        users[chat_id][owner_uid]["money"] += game["bet"]
+        users[chat_id][owner_uid]["money"] += reward
 
         game["ended"] = True
 
@@ -2613,7 +2613,7 @@ def mines_callback(call):
     # ⏳ timeout
     if time.time() - game["time"] > 120:
 
-        users[chat_id][owner_uid]["money"] += game["bet"]
+        users[chat_id][owner_uid]["money"] += reward
         del mines_games[key]
 
         save()
