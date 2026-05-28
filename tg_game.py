@@ -2701,12 +2701,12 @@ def mines_callback(call):
     # 🏆 max safe auto collect
     if game["safe_hits"] >= 13:
 
-        reward = game["reward"]
+        reward = int(game["reward"])
 
         if key not in mines_games:
             return
 
-        users[chat_id][owner_uid]["money"] += game["bet"]
+        users[chat_id][owner_uid]["money"] += reward
 
         game["ended"] = True
 
