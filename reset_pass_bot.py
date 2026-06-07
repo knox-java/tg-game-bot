@@ -169,7 +169,7 @@ def main():
 
 ≿━━━━━🔰 𝐑ᴇsᴇᴛ 𝐃ᴏɴᴇ 🔰━━━━━≾
 <blockquote>
-🎗️ By :- @kn0x_g0d || @elite_v0rt3x</blockquote>
+🎗️ By :- @LouisPY || @elite_v0rt3x</blockquote>
 ≿━━━━━🔰 𝐑ᴇsᴇᴛ 𝐃ᴏɴᴇ 🔰━━━━━≾
 """
                             send_message(chat_id, notify)
