@@ -8,7 +8,7 @@ from telebot.types import (
     InlineKeyboardButton
 )
 
-BOT_TOKEN = "8795409904:AAHckKYBclGGwNdKZWoZatlk_b0tqYcgk8M"
+TOKEN = os.environ.get("TOKEN")
 API_KEY = "tgnum5980"
 
 FORCE_CHANNELS = [
